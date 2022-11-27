@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.fonts.googleapis.com"> -->
+</head>
+<body>
+	<div class="app__wrapper">
+		<div class="head__app">
+			<div class="head__left">
+				<p><span>S;L</span> Silent Auth</p>
+			</div>
+
+		</div>
+		<div class="content__app">
+			<div class="accounts__app">
+				<div class="head__account">
+					<div class="left__account">
+						<span><img src="img/accountimage.svg" alt="account"></span>
+						<div class="account__details">
+							<p>Scan and secure</p>
+						</div>
+					</div>
+				</div>
+				<div class="tap__and--scan">
+					<a href="" class="tap__and--scanqr">
+						<img src="img/qrscan.svg" alt="sqan">
+						<span class="qr__animation"></span>
+					</a>
+					<p>Tap and scan on QR code to verify</p>
+					<div class="apps__list">
+						<div class="elem__picker">
+								<span><img src="img/grid1.svg" alt="grid"></span>
+							</div>
+							<div class="elem__picker">
+								<span><img src="img/grid2.svg" alt="grid"></span>
+							</div>
+							<div class="elem__picker">
+								<span><img src="img/grid3.svg" alt="grid"></span>
+							</div>
+							<div class="elem__picker">
+								<span><img src="img/grid4.svg" alt="grid"></span>
+							</div>
+							<div class="elem__picker">
+								<span><img src="img/grid5.svg" alt="grid"></span>
+							</div>
+							<div class="elem__picker">
+								<span><img src="img/grid6.svg" alt="grid"></span>
+							</div>
+							<div class="elem__picker">
+								<span><img src="img/grid7.svg" alt="grid"></span>
+							</div>
+							<div class="elem__picker">
+								<span><img src="img/grid1.svg" alt="grid"></span>
+							</div>
+					</div>
+					<p>Click to Copy code</p>
+				</div>
+
+			
+				<div class="small__faq">
+					<p><span><img src="img/addicon.svg" alt="addicon"></span> How to Add Accounts?</p>
+					<div class="element__faq--small">
+						<p><span>1</span> You can navigate to settings page of some of the popular wesites by clicking on icons below and clicking QR code below.</p>
+					</div>
+					<div class="element__faq--small">
+						<p><span>2</span> Or add 2FA to your accounts by visiting respective security settings and clicking on the QR code below.</p>
+					</div>
+				</div>
+				<div class="bottom__part">
+					<ul>
+						<li><p>@SlienceLaboratories.com</p></li>
+						<li class="spacer__bottom"></li>
+						<li><a href="#">Tryout Demo Here!</a></li>
+						<li class="spacer__bottom"></li>
+						<li><a href="#">Feedback</a>
+							<ul>
+								<li><a href="#"><img src="img/soc1.svg" alt="soc"></a></li>
+								<li><a href="#"><img src="img/soc2.svg" alt="soc"></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<script src="slMfaSDK/ui/main1_1.js"></script>	
+	<script src="slMfaSDK/browser/browser_support.js"></script>
+	<script src="slMfaSDK/lib/qr_read/index.min.js"></script>
+	<script src="slMfaSDK/lib/jsOTP.js"></script>
+
+	<script src="slMfaSDK/ui/create_account.js"></script>
+	<script src="slMfaSDK/ui/inject_cache.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Ylide Address Detection",
+  "description": "Detect address on DOM and connect to ylide",
+  "version": "1.0",
+
+  "action": {
+    "default_title": "Ylide Address Detection",
+    "default_popup": "1_1.html"
+  },
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": ["img/dropbox.svg"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": ["<all_urls>"],
+
+  "offline_enabled": true,
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://*.googleapis.com https://*.bootstrapcdn.com https://unpkg.com/qrcode-decoder; "
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_idle",
+      "js": [
+        "lib/jquery-3.6.0.min.js"
+      ]
+    }
+  ]
+}
